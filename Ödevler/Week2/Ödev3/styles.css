@@ -1,0 +1,130 @@
+/* Genel Ayarlar */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #0c0c0c;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Başlık ve Navigasyon */
+header {
+  background: #111;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+  color: #e6e6e6;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #aaa;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Ana Giriş (Hero) Bölümü */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #1a1a1a, #0c0c0c);
+}
+
+.hero img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+blockquote {
+  font-style: italic;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+blockquote span {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+
+/* Biyografi Bölümü */
+.bio {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.bio h2 {
+  text-align: center;
+  color: #e6e6e6;
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+}
+
+.bio p {
+  margin-top: 20px;
+  color: #ccc;
+}
+
+/* Eserler Bölümü */
+.works {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.works h2 {
+  text-align: center;
+  color: #e6e6e6;
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+}
+
+.works ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.works li {
+  background: #1a1a1a;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(255,255,255,0.1);
+  transition: transform 0.2s ease;
+}
+
+.works li:hover {
+  transform: translateX(5px);
+  background: #222;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 15px 0;
+  color: #999;
+  border-top: 2px solid #444;
+}
