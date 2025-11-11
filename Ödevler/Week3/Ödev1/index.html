@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Klonu - Bootstrap</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #fafafa; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-light bg-white fixed-top border-bottom shadow-sm" style="height:54px;">
+    <div class="container-fluid px-5 d-flex justify-content-between align-items-center">
+      <a class="navbar-brand ms-5" href="#">
+        <img src="assets/logo.png" alt="Logo" height="28">
+      </a>
+      <form class="d-none d-md-flex mx-auto" style="width: 300px;">
+        <div class="input-group">
+          <span class="input-group-text bg-light border-0"><i class="fa-solid fa-magnifying-glass text-muted"></i></span>
+          <input type="text" class="form-control form-control-sm border-0 bg-light" placeholder="Ara">
+        </div>
+      </form>
+      <ul class="navbar-nav flex-row align-items-center d-none d-sm-flex me-5" style="gap:20px;">
+        <li class="nav-item"><a href="#" class="nav-link text-dark"><i class="fa-regular fa-compass fa-lg"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark"><i class="fa-regular fa-heart fa-lg"></i></a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-dark"><i class="fa-regular fa-user fa-lg"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5 pt-4">
+    <div class="row justify-content-center">
+
+      <!-- Ana içerik -->
+      <div class="col-12 col-md-6">
+
+        <!-- Hikayeler -->
+        <div class="d-flex justify-content-start align-items-center overflow-auto border bg-white rounded p-2 mb-4" style="gap:20px;">
+          <div class="text-center">
+            <img src="assets/story1.jpg" class="rounded-circle border" width="64" height="64" alt="story">
+            <div class="small mt-1">enes</div>
+          </div>
+          <div class="text-center">
+            <img src="assets/story2.jpg" class="rounded-circle border" width="64" height="64" alt="story">
+            <div class="small mt-1">ayse</div>
+          </div>
+          <div class="text-center">
+            <img src="assets/story3.jpg" class="rounded-circle border" width="64" height="64" alt="story">
+            <div class="small mt-1">mehmet</div>
+          </div>
+        </div>
+
+        <!-- Gönderi kartı -->
+        <div class="card mb-4">
+          <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <img src="assets/avatar.jpg" class="rounded-circle me-2" width="36" height="36" alt="avatar">
+              <span class="fw-bold">kullanici_adi</span>
+            </div>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+
+          <img src="assets/post1.jpg" class="card-img-top" alt="gonderi">
+
+          <div class="card-body pb-2">
+            <div class="d-flex justify-content-between">
+              <div>
+                <a href="#" class="text-dark me-3"><i class="fa-regular fa-heart fa-lg"></i></a>
+                <a href="#" class="text-dark me-3"><i class="fa-regular fa-comment fa-lg"></i></a>
+                <a href="#" class="text-dark"><i class="fa-solid fa-paper-plane fa-lg"></i></a>
+              </div>
+              <a href="#" class="text-dark"><i class="fa-regular fa-bookmark fa-lg"></i></a>
+            </div>
+            <p class="fw-bold mt-2 mb-1">1.234 beğeni</p>
+            <p><strong>kullanici_adi</strong> Gönderi açıklaması örneği...</p>
+            <p class="text-muted small mb-0 text-end">Yorum ekle...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sağ panel -->
+      <div class="col-md-3 d-none d-lg-block">
+        <div class="position-sticky" style="top:80px;">
+          <div class="bg-white rounded p-3">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="d-flex align-items-center">
+                <img src="assets/avatar.jpg" class="rounded-circle me-2" width="48" height="48">
+                <div>
+                  <div class="fw-bold">enes</div>
+                  <div class="text-muted small">Enes Tikici</div>
+                </div>
+              </div>
+              <a href="#" class="text-decoration-none small">Tümünü gör</a>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <img src="assets/suggestion1.jpg" width="40" height="40" class="rounded-circle me-2">
+                <div>
+                  <div class="small fw-semibold">kullanici2</div>
+                  <div class="small text-muted">Takip etmiyor</div>
+                </div>
+              </div>
+              <a href="#" class="small text-primary text-decoration-none">Takip et</a>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="d-flex align-items-center">
+                <img src="assets/suggestion2.jpg" width="40" height="40" class="rounded-circle me-2">
+                <div>
+                  <div class="small fw-semibold">kullanici3</div>
+                  <div class="small text-muted">Önerilen</div>
+                </div>
+              </div>
+              <a href="#" class="small text-primary text-decoration-none">Takip et</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

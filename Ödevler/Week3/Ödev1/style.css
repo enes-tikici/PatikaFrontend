@@ -1,0 +1,125 @@
+/* Navbar sabitlensin, yükseklik 54px, arkaplan beyaz */
+.navbar-fixed {
+  height: 54px;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* body'e navbar yüksekliği kadar padding veriyoruz, içerikle birleşmesin */
+body {
+  padding-top: 54px;
+  background-color: #fafafa;
+}
+
+/* Logo alanına 192px soldan margin */
+.logo {
+  margin-left: 192px;
+  display: flex;
+  align-items: center;
+  height: 54px;
+}
+
+/* Arama kutusunu ortala ve soldan 5 birim margin */
+.search-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input {
+  margin-left: 0rem;
+}
+
+/* Placeholder arkaplanına arama ikonu ve tekrarlamasın */
+.search-input input {
+  background-image: url('assets/search-icon.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 36px;
+}
+
+.search-input input::placeholder {
+  opacity: 0.9;
+}
+
+/* Sağ üst menüye margin */
+.top-menu {
+  margin-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+/* İçerik alanı */
+.middlearea {
+  max-height: 200px !important;
+  overflow: hidden;
+}
+
+/* Hikayeler */
+.story {
+  text-align: center;
+}
+
+.story img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+/* Gönderi üç nokta sağda */
+.post-card {
+  position: relative;
+}
+
+.post-more {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  cursor: pointer;
+}
+
+/* Beğen/yorum/paylaş kısmında border olmasın */
+.post-actions {
+  border: none;
+}
+
+/* Bookmark ikonunun offset'i */
+.ms-7 {
+  margin-left: 1.75rem !important;
+}
+
+/* card header ve footer beyaz */
+.card-header, .card-footer {
+  background: #ffffff;
+}
+
+/* Yorum paylaş metnini sağa al */
+.share-comment {
+  text-align: right;
+}
+
+/* Sağ panel */
+.stickysidebar {
+  position: sticky;
+  top: 70px;
+}
+
+.rightpanel {
+  background: #ffffff;
+  border: none;
+  padding: 1rem;
+}
+
+/* Tümünü gör ve takip et yazılarını sağa al */
+.text-end-important {
+  text-align: right;
+}
+
+/* Kart aralıkları */
+.card {
+  margin-bottom: 1rem;
+}
