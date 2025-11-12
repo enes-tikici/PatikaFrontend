@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TailwindCSS Review Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-4 bg-white shadow-sm">
+    <div class="flex items-center space-x-6">
+      <a href="#" class="text-sm font-medium text-gray-600 hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600">Link</a>
+      <a href="#" class="text-sm font-medium text-gray-600 hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600">Link</a>
+      <a href="#" class="text-sm font-medium text-gray-600 hover:text-purple-600 border-b-2 border-transparent hover:border-purple-600">Link</a>
+    </div>
+    <div class="flex items-center space-x-4">
+      <button class="text-gray-600 hover:text-purple-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v20m10-10H2" />
+        </svg>
+      </button>
+      <input type="text" placeholder="Search..." class="px-3 py-1 border rounded text-sm">
+      <button class="bg-purple-600 text-white px-4 py-1 rounded hover:bg-purple-700">Log in</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 bg-gray-50">
+    <h1 class="text-4xl font-extrabold text-gray-900">
+      Quisquam necessitatia vel <span class="text-purple-600">laborum doloribus</span> delectus
+    </h1>
+    <p class="text-gray-600 mt-4">Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!</p>
+
+    <div class="mt-8 flex justify-center space-x-4">
+      <a href="#" class="bg-purple-600 text-white px-6 py-2 rounded hover:bg-purple-700">Get started</a>
+      <a href="#" class="text-gray-700 hover:text-purple-600 font-medium">Learn more</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-white">
+    <h2 class="text-center text-2xl font-semibold mb-12">What our customers are saying about us</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+      <!-- Card -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.</p>
+        <div class="bg-purple-600 text-white p-4 rounded-b-lg">
+          <h3 class="font-semibold">Distinctio Animi</h3>
+          <p class="text-sm text-purple-200">Aliquam Illum</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.</p>
+        <div class="bg-purple-600 text-white p-4 rounded-b-lg">
+          <h3 class="font-semibold">Distinctio Animi</h3>
+          <p class="text-sm text-purple-200">Aliquam Illum</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.</p>
+        <div class="bg-purple-600 text-white p-4 rounded-b-lg">
+          <h3 class="font-semibold">Distinctio Animi</h3>
+          <p class="text-sm text-purple-200">Aliquam Illum</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
