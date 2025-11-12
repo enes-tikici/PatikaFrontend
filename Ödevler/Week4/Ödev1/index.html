@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Ortalanmış Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="mt-10">
+    <div class="mx-auto bg-white rounded-2xl shadow-md w-4/5 max-w-6xl px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Sol Logo -->
+        <div class="flex items-center space-x-2">
+          <span class="text-xl font-semibold text-gray-800">Logo</span>
+        </div>
+
+        <!-- Orta Menü -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Ana Sayfa</a>
+          <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Hakkında</a>
+          <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Hizmetler</a>
+          <div class="p bg-purple-600 rounded"><a href="#" class="hover:text-blue-600 font-medium p-6 m-4 text-white h-10 w-10">İletişim</a></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- İçerik -->
+  <section class="w-4/5 max-w-6xl mx-auto mt-10 grid grid-cols-12 gap-8">
+    
+    <!-- Sol Kısım (Form - 5 kolon) -->
+    <div class="col-span-12 md:col-span-5 bg-white shadow-md rounded-xl p-6">
+        <p class="text-purple-600 text-center">Mamba desing system</p>
+      <h2 class="text-2xl font-semibold mb-4 text-gray-800 text-center font-bold">Build it with Mamba</h2>
+      <p class="text-center">Modular and versaitle. The Ultimate desing toolkit for savvy technology startups</p>
+      <form class="space-y-4">
+        <div>
+          <input  type="text" placeholder="Adınızı girin"
+                 class="w-full border rounded-md mt-5 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <input type="email" placeholder="ornek@mail.com"
+                 class="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <button type="submit" class="w-full bg-purple-500 text-white mb-6 py-2 rounded-md hover:bg-blue-700 transition">
+          Kaydol
+        </button>
+      </form>
+    </div>
+    <!-- Sağ Kısım (Resim - 7 kolon) -->
+    <div class="col-span-12 md:col-span-7">
+      <img src="https://picsum.photos/900/500?random=1" 
+           alt="Random Görsel" class="rounded-2xl shadow-md w-full h-full object-cover">
+    </div>
+  </section>
+  <section class="w-4/5 max-w-6xl mx-auto mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Madde 1 -->
+    <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
+      <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white text-lg font-bold">1</div>
+      <p class="text-gray-600">Sadece birkaç adımda hesabını oluştur, hemen kullanmaya başla.</p>
+    </div>
+
+    <!-- Madde 2 -->
+    <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
+      <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white text-lg font-bold">2</div>
+      <p class="text-gray-600">Verilerin güvenle saklanır, gelişmiş şifreleme ile korunur.</p>
+    </div>
+
+    <!-- Madde 3 -->
+    <div class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-lg transition">
+      <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white text-lg font-bold">3</div>
+      <p class="text-gray-600">Kullanıcı dostu arayüzümüz sayesinde işlemlerini hızla hallet.</p>
+    </div>
+  </section>
+
+  <section class="w-4/5 max-w-6xl mx-auto mt-10 grid grid-cols-12 gap-8">
+    
+    <!-- Sağ Kısım (Resim - 6 kolon) -->
+    <div class="col-span-12 md:col-span-6">
+      <img src="https://picsum.photos/900/500?random=1" 
+           alt="Random Görsel" class="rounded-2xl shadow-md w-full h-full object-cover">
+    </div>
+
+    <!-- Sol Kısım (Form - 6 kolon) -->
+    <div class="col-span-12 md:col-span-6 bg-white shadow-md rounded-xl p-6">
+         <div class="col-span-5 relative">
+      <div id="carousel1" class="overflow-hidden h-24">
+        <div class="carousel-inner transition-all duration-500">
+          <p class="text-xl font-semibold mb-2">“Başarı, sabırla gelir.”</p>
+          <p class="text-xl font-semibold mb-2">“Hayal etmeden hiçbir şey olmaz.”</p>
+          <p class="text-xl font-semibold mb-2">“Küçük adımlar büyük fark yaratır.”</p>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    
+  </section>
+  </div>
+  
