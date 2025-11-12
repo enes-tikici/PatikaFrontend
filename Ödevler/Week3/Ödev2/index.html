@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LinkedIn Clone</title>
+
+  <!-- Bootstrap ve FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f3f2ef;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      height: 56px;
+    }
+
+    .navbar-brand img {
+      height: 34px;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+    }
+
+    .nav-link:hover {
+      color: #0a66c2;
+    }
+
+    /* Sol panel */
+    .sidebar {
+      background: #fff;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    /* Ortadaki post alanı */
+    .feed-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+
+    .feed-card img.post-img {
+      width: 100%;
+      border-radius: 0;
+    }
+
+    .post-actions i {
+      cursor: pointer;
+      color: #666;
+    }
+
+    .post-actions i:hover {
+      color: #0a66c2;
+    }
+
+    /* Sağ panel */
+    .rightpanel {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    /* Küçük metin */
+    .text-muted {
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand me-4" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
+      </a>
+      <form class="d-none d-md-flex flex-grow-1 me-4">
+        <input class="form-control form-control-sm" type="search" placeholder="Ara" aria-label="Ara">
+      </form>
+      <ul class="navbar-nav flex-row align-items-center">
+        <li class="nav-item me-3"><a class="nav-link" href="#"><i class="fa-solid fa-house"></i><br><small>Ana Sayfa</small></a></li>
+        <li class="nav-item me-3"><a class="nav-link" href="#"><i class="fa-solid fa-user-group"></i><br><small>Ağım</small></a></li>
+        <li class="nav-item me-3"><a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i><br><small>İşler</small></a></li>
+        <li class="nav-item me-3"><a class="nav-link" href="#"><i class="fa-solid fa-bell"></i><br><small>Bildirimler</small></a></li>
+      </ul>
+      <a href="#" class="ms-3">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profil" class="rounded-circle" width="36" height="36">
+      </a>
+    </div>
+  </nav>
+
+  <!-- Sayfa İçeriği -->
+  <div class="container-fluid" style="padding-top:80px;">
+    <div class="row justify-content-center">
+
+      <!-- Sol Panel -->
+      <div class="col-12 col-md-3 d-none d-md-block">
+        <div class="sidebar mb-3">
+          <div class="text-center">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-circle mb-2" width="70" height="70" alt="Kullanıcı">
+            <h6 class="fw-bold">Enes Tikici</h6>
+            <p class="text-muted mb-1">Yazılım Geliştirici</p>
+            <a href="#" class="text-primary small">Profilimi Gör</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ana Feed -->
+      <div class="col-12 col-md-6">
+
+        <!-- Gönderi Kartı -->
+        <div class="feed-card card p-3">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle me-2" width="48" height="48">
+            <div>
+              <div class="fw-bold">Merve Karahan</div>
+              <div class="text-muted">2 saat önce • Yazılım Mühendisi</div>
+            </div>
+            <div class="ms-auto"><i class="fa-solid fa-ellipsis"></i></div>
+          </div>
+          <p>Yeni projemizi tamamladık 🎉 Ekiple birlikte harika bir iş çıkardık!</p>
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=60" class="post-img mb-3" alt="Post Görseli">
+          <div class="d-flex justify-content-around border-top pt-2 text-muted post-actions">
+            <i class="fa-regular fa-thumbs-up"></i>
+            <i class="fa-regular fa-comment"></i>
+            <i class="fa-solid fa-share"></i>
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+        <!-- Başka Gönderi -->
+        <div class="feed-card card p-3">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://randomuser.me/api/portraits/men/33.jpg" class="rounded-circle me-2" width="48" height="48">
+            <div>
+              <div class="fw-bold">Ahmet Kaya</div>
+              <div class="text-muted">5 saat önce • Veri Analisti</div>
+            </div>
+            <div class="ms-auto"><i class="fa-solid fa-ellipsis"></i></div>
+          </div>
+          <p>LinkedIn Clone projesini Bootstrap ile sıfırdan yapmak harika bir deneyim oldu!</p>
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=60" class="post-img mb-3">
+          <div class="d-flex justify-content-around border-top pt-2 text-muted post-actions">
+            <i class="fa-regular fa-thumbs-up"></i>
+            <i class="fa-regular fa-comment"></i>
+            <i class="fa-solid fa-share"></i>
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sağ Panel -->
+      <div class="col-12 col-md-3 d-none d-lg-block">
+        <div class="rightpanel">
+          <h6 class="fw-bold mb-3">Kimleri Tanıyor Olabilirsin</h6>
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://randomuser.me/api/portraits/women/22.jpg" class="rounded-circle me-2" width="40" height="40">
+            <div class="small">
+              <div>Elif Güneş</div>
+              <div class="text-muted">3 ortak bağlantı</div>
+            </div>
+            <a href="#" class="ms-auto btn btn-outline-primary btn-sm">Bağlan</a>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://randomuser.me/api/portraits/men/55.jpg" class="rounded-circle me-2" width="40" height="40">
+            <div class="small">
+              <div>Burak Şen</div>
+              <div class="text-muted">1 ortak bağlantı</div>
+            </div>
+            <a href="#" class="ms-auto btn btn-outline-primary btn-sm">Bağlan</a>
+          </div>
+          <a href="#" class="text-primary small">Tümünü Gör</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
