@@ -1,0 +1,44 @@
+#drumKit {
+    background-color: #2D3D50;
+    margin-top: 10rem;
+    margin-inline: auto;
+    width: 60vw;
+}
+
+.drumKit__title {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+}
+
+.drumKit__image {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.drumKit__keys {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.drumKit__key {
+    border: .4rem solid #F2A365;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B262C;
+    border-radius: 1rem;
+    color: #FFFFFF;
+}
+
+.active {
+    transform: scale(0.95);
+    background-color: #0F4C75;
+}
