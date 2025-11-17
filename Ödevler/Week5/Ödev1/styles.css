@@ -1,0 +1,15 @@
+body {
+    background-color: #32383E;
+    color: #BA6001;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 1.6;
+}
