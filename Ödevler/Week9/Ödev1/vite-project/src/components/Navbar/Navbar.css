@@ -1,0 +1,84 @@
+#navbar {
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 99;
+    transition: background-color 0.3s ease;
+}
+
+#menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-decoration-line: none;
+}
+
+.menu-item {
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+.menu-button {
+    text-decoration-line: none;
+    color: white;
+}
+
+#join-button {
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#toggle {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    #navbar {
+        background-color: transparent;
+    }
+
+    #navbar #menu {
+        display: none;
+        gap: 10px;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 110px;
+        margin: 0 auto;
+        width: 500px;
+        padding: 20px;
+        border-radius: 5px;
+        z-index: 100;
+    }
+
+    #navbar #menu #menu-list {
+        display: block;
+    }
+
+    #navbar #menu #menu-list li {
+        margin: 10px;
+    }
+
+    #navbar #menu.show {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        top: 110px;
+        right: 20px;
+    }
+
+    #toggle {
+        display: flex;
+        font-size: 3rem;
+        font-weight: 900;
+        cursor: pointer;
+    }
+}

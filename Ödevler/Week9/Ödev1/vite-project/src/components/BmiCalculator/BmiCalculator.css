@@ -1,0 +1,131 @@
+#bmi-container {
+    padding: 20px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 100px;
+}
+
+#bmi-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    width: 50%;
+
+}
+
+#bmi-info-title {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.bmi-info-text {
+    color: var(--info-color);
+    font-weight: bold;
+}
+
+
+#bmi-calculate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#bmi-img-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#bmi-img-area img {
+    width: 100%;
+}
+
+#bmi-calculate input {
+    margin-left: 20px;
+    padding: 5px;
+    outline: none;
+}
+
+#bmi-bmi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bmi-triangle {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: -8px;
+    width: 80%;
+    height: 10px;
+    gap: 5px;
+}
+
+.triangle-area {
+    position: relative;
+}
+
+.triangle-area::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    #bmi-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        font-size: 1.5rem;
+        padding: 20px 0px;
+        text-align: justify;
+
+    }
+
+    #bmi-info-title {
+        margin: 0 auto;
+    }
+
+    #bmi-info {
+        width: 90%;
+    }
+
+    #bmi-calculate {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .calculate-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .calculate-container input {
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-right: 5px;
+        width: 250px;
+        height: 30px;
+    }
+}
