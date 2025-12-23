@@ -1,0 +1,23 @@
+#dice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+h2 {
+    color: #00CB96;
+}
+
+#name-input {
+    background-color: #31363E;
+    border: 1px solid #00CB96;
+    font-size: 30px;
+    width: 50%;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Bitcount Prop Single", system-ui;
+    color: #00CB96;
+}
